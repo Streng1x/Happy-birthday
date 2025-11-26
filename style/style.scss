@@ -34,8 +34,8 @@
 
 
 header {
-    position: relative;
-    z-index: 1;
+    // position: relative;
+    // z-index: 1;
 
     background-color: #CEFEFF;
     height: 100vh;
@@ -43,23 +43,9 @@ header {
     justify-content: center;
     align-items: center;
 
-    .cake {
-        position: absolute;
-        top: 63%;
-        z-index: 3;
-        width: 40%;
-    }
-
-    .confiti {
-        position: absolute;
-        top: 35%;
-        left: 52%;
-        z-index: 2;
-        width: 30%;
-        transform: rotate(10deg);
-    }
-
     .main_block_with_back {
+        position: relative;
+        z-index: 1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -67,7 +53,16 @@ header {
         border-radius: 20px;
         // background-image: url("https://static.vecteezy.com/system/resources/previews/022/451/237/original/exploding-party-popper-with-confetti-bright-cartoon-birthday-cracker-3d-render-png.png");
 
+        .cake {
+            position: absolute;
+            top: 96%;
+            z-index: 3;
+            width: 60%;
+        }
+
         .main_block {
+            position: relative;
+            z-index: 1;
             margin: 20px;
             width: 250px;
             height: 250px;
@@ -79,6 +74,15 @@ header {
             justify-content: start;
             align-items: center;
             flex-direction: column;
+
+            .confiti {
+                position: absolute;
+                top: -15%;
+                left: 52%;
+                z-index: 2;
+                width: 50%;
+                transform: rotate(10deg);
+            }
 
             .main_block_text {
                 .one {
